@@ -1,7 +1,5 @@
-// Jenkinsfile (Declarative Pipeline)
-
 pipeline {
-    agent { docker 'node:8-alipne' }
+    agent { docker 'node:8-alpine' }
     stages {
         stage('build') {
             steps {
