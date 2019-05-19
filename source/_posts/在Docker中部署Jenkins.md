@@ -51,3 +51,5 @@ $ exit # 退出容器
 ```bash
 $ cat /var/lib/docker/volumes/jenkins/_data/secrets/initialAdminPassword
 ```
+
+test
