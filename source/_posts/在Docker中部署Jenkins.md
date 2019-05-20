@@ -52,4 +52,4 @@ $ exit # 退出容器
 $ cat /var/lib/docker/volumes/jenkins/_data/secrets/initialAdminPassword
 ```
 
-test
+打开浏览器访问`8080`, 输入初始管理员密码, 创建管理员, 完成.

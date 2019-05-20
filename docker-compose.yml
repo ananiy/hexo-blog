@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nginx:
+    container_name: hexo-blog
+    build:
+      context: .
+    ports:
+      - '80:80'
+    networks:
+      - nginx
+networks:
+  nginx:
