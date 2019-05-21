@@ -4,9 +4,11 @@ services:
     container_name: hexo-blog
     build:
       context: .
-    ports:
-      - '80:80'
     networks:
       - nginx
+    volumes:
+      - nginx:/etc/nginx/conf.d
+volumes:
+  nginx:
 networks:
   nginx:
