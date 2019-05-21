@@ -1,17 +1,13 @@
 version: '3'
 services:
-  nginx:
-    container_name: hexo-blog-nginx
+  blog:
+    container_name: hexo-blog
     build: .
-    image: hexo-blog-nginx
+    image: hexo-blog
     ports:
       - '80:80'
       - '443:443'
-    networks:
-      - nginx
     volumes:
-      - nginx:/etc/nginx/conf.d
+      - nginx:/etc/nginx
 volumes:
-  nginx:
-networks:
   nginx:
