@@ -6,7 +6,7 @@
     "version": "3.8.0"
   },
   "scripts": {
-    "build": "hexo g"
+    "build": "hexo g && hexo d"
   },
   "dependencies": {
     "hexo": "^3.8.0",
