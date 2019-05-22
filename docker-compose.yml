@@ -8,6 +8,10 @@ services:
       - '80:80'
       - '443:443'
     volumes:
-      - nginx-conf:/etc/nginx/conf.d
+      - nginx:/etc/nginx/conf.d
+    networks:
+      - nginx
 volumes:
-  nginx-conf:
+  nginx:
+networks:
+  nginx:
